@@ -27,9 +27,11 @@ Run the project:
 Directly in the browser:
 Right-click the index.html file and select Open with > [Your Browser].
 Using a local server (optional for more advanced setups):
-Start the local server (e.g., using XAMPP or WAMP).
+Start the local server (e.g., using JSON server,XAMPP or WAMP).
 Place the project folder inside the server's root directory (e.g., htdocs for XAMPP).
 Access the project in the browser at http://localhost/YourProjectFolder.
+EG: I've used  json-server to run this project, code to install json server globally //npm install json-server -g
+then run json server using //json-server order.json --port 3000
 
 Verify responsiveness:
 Resize the browser window or use the developer tools (Ctrl+Shift+I or F12) to check how the project adapts to different screen sizes.
