@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+/* Style for floating cloud validation messages */
+.validation-message {
+  position: absolute;
+  top: -17px; /* Position above the input field */
+  left: 0;
+  right: 0;
+  /* background-color: #f8d7da; */
+  color: #dc3545;
+  padding: 5px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  width: auto; /* Adjust width to the content */
+  min-width: 10px; /* Minimum width to prevent it from being too small */
+  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0; /* Initially hidden */
+  visibility: hidden; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  font-weight: bolder;
+  text-align: left;
+  margin-left: 7px;
+}
+
+
+/* Show the error message when there is an error */
+.input-error ~ .validation-message {
+  opacity: 1;
+  visibility: visible;
+  top: -17px; /* Adjust for visibility above the input */
+}
+
+.input-error {
+  border-color: #dc3545; /* Highlight the input border */
+}
+
+
+
+  
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body{
+  background-color: #edfdfb;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
